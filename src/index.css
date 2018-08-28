@@ -1,5 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  font-color: yellow;
+}
+
+.beer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 25%;
+
+    background-color: F7FF00;
+    text-align: center;
+    margin: 4px 2px;
+    width: 50vw;
+    color: yellow;
+
 }

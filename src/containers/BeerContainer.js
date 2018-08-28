@@ -38,7 +38,7 @@ class BeerContainer extends React.Component {
 
 render() {
   return (
-    <div>
+    <div className="beer-container">
       <h2> Brew Dog Beer Bonanza </h2>
       <BeerSelector beers={this.state.beers}
         onBeerSelected = {this.handleBeerSelected} />
