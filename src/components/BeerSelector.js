@@ -3,11 +3,12 @@ import React from 'react';
 const BeerSelector = (props) => {
 
 function handleChange(evt){
-  props.onBeerSelected(evt.target.valiue);
+  props.onBeerSelected(evt.target.value);
 }
 
 const options = props.beers.map((beer, index) => {
-  return <option value = {index} key= {index}> {beer.name} </option>
+
+  return <option value ={index} key= {index}> {beer.name} </option>
 })
 
 return (

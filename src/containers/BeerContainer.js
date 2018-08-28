@@ -12,17 +12,27 @@ class BeerContainer extends React.Component {
     this.handleBeerSelected = this.handleBeerSelected.bind(this);
   }
 
-  ComponentDidMount() {
-    const url = 'https://api.punkapi.com/v2'
+  componentDidMount() {
+    const url = 'https://api.punkapi.com/v2/beers'
     fetch(url)
     .then((res) => {
-      return.json();
+      return res.json();
     })
     .then((beers) => {
       this.setState({
         beers: beers
       });
     })
+  }
+
+  handleBeerSelected(index) {
+    console.log(index);
+    const selectedBeer = this.state.beers[index];
+    console.log(this.state.beers[1]);
+    console.log(selectedBeer);
+    this.setState({
+      selectedBeer: selectedBeer
+    });
   }
 
 render() {
