@@ -6,7 +6,8 @@ const BeerDetail = (props) =>{
     <div>
       <h3>Name: {props.selectedBeer.name}</h3>
       <p> Description: {props.selectedBeer.description}</p>
-  
+      
+
     </div>
   )
 }
